@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "611700836019",
+    "project_id": "kotlinlearn-ddaf6",
+    "storage_bucket": "kotlinlearn-ddaf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611700836019:android:11fdab38de852dc708d2c6",
+        "android_client_info": {
+          "package_name": "com.example.kotlinfirebaselearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611700836019-35ju1fllu2iks2fh0fc61rgsq2j8fl0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWLfeWL9aOGY6BFCLO0g8agOz2cXC2gG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611700836019-35ju1fllu2iks2fh0fc61rgsq2j8fl0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

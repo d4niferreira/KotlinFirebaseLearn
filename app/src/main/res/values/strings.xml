@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KotlinFirebaseLearn</string>
+    <string name="login_user">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Login</string>
+    <string name="login_welcome">Welcome!</string>
+    <string name="login_register"> <u>New here? Register now!</u> </string>
+
+    <string name="register_register"> Register </string>
+    <string name="register_join">Join the community now </string>
+    <string name="register_firstname"> First name </string>
+    <string name="register_lastname"> Last name </string>
+    <string name="register_email"> Email </string>
+    <string name="register_password_confirm"> Confirm password </string>
+    <string name="register_teste"> Input name </string>
+    <string name="register_login"> <u>Have account? Sing in!</u></string>
+
+    <!--Warnings -->
+    <string name="warning_email_invalid">Invalid email format. Please enter a valid email address</string>
+    <string name="warning_empty_fields">Empty fields are not allowed!!</string>
+    <string name="warning_password_match">Password is not matching</string>
+
+</resources>

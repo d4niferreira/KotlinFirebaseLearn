@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#B8E2FF</color>
+    <color name="blue_fundo">#E1F3FF</color>
+    <color name="purple">#6c62ff</color>
+    <color name="pink">#B5FF5D9C</color>
+    <color name="container_input" tools:override="true">#B5FF5D9C</color>
+</resources>
