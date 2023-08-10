@@ -1,9 +1,12 @@
-package com.example.kotlinfirebaselearn
+package com.example.kotlinfirebaselearn.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kotlinfirebaselearn.R
+import com.example.kotlinfirebaselearn.User
+import com.example.kotlinfirebaselearn.Utils
 import com.example.kotlinfirebaselearn.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference

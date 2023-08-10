@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">KotlinFirebaseLearn</string>
+    <string name="app_name">Notes</string>
     <string name="login_user">Username</string>
     <string name="login_password">Password</string>
     <string name="login_login">Login</string>
-    <string name="login_welcome">Welcome!</string>
+    <string name="login_welcome">Welcome to Notes!</string>
+    <string name="login_welcome_slogan">Sign in and embrace the art of remembering</string>
     <string name="login_register"> <u>New here? Register now!</u> </string>
 
     <string name="register_register"> Register </string>
@@ -19,5 +20,15 @@
     <string name="warning_email_invalid">Invalid email format. Please enter a valid email address</string>
     <string name="warning_empty_fields">Empty fields are not allowed!!</string>
     <string name="warning_password_match">Password is not matching</string>
+
+    <!--Menu -->
+    <string name="menu_logout">Logout</string>
+    <string name="menu_about">About</string>
+
+    <!-- Views -->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add">Add</string>
+    <string name="title_notes">"'s notes"</string>
 
 </resources>

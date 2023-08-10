@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/blue_fundo"
-    tools:context=".LoginActivity">
+    tools:context=".view.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     <ImageView
         android:id="@+id/imageview_login"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/ic_mobile_user"
         app:layout_constraintBottom_toTopOf="@+id/textview_title_login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,28 +29,48 @@
 
     <TextView
         android:id="@+id/textview_title_login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="monospace"
         android:text="@string/login_welcome"
         android:textColor="@color/purple"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textAlignment="textStart"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageview_login" />
 
+    <TextView
+        android:id="@+id/textview_subtitle_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="monospace"
+        android:text="@string/login_welcome_slogan"
+        android:textColor="@color/gray_text"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_login" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textinputlayout_activitylogin_user"
         style="@style/CustomOutlinedTextField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:hint="@string/login_user"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_title_login">
+        app:layout_constraintTop_toBottomOf="@+id/textview_subtitle_login">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edittext_login_email"
@@ -92,4 +121,6 @@
         app:layout_constraintEnd_toEndOf="@id/button_login"
         app:layout_constraintTop_toBottomOf="@+id/button_login" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

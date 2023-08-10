@@ -4,47 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_fundo"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
-
-    <ImageView
-        android:id="@+id/imageview_login"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/ic_welcome_user"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include layout="@layout/toolbar" />
 
     <TextView
-        android:id="@+id/textview_greetings"
+        android:id="@+id/textview_mainactivity_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="4dp"
         android:fontFamily="monospace"
-        android:textColor="@color/purple"
-        android:textSize="14sp"
-        android:text="Hello, Daniele"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonmain_logout"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscrollview_recycler_notes"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/purple"
-        android:fontFamily="monospace"
-        android:text="Logout"
-        android:textColor="@color/blue_fundo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_mainactivity_title">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_main_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="32dp" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbutton_main_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#6c62ff</color>
+
+    <color name="purple_text">#E3E3E3</color>
+    <color name="item_fundo">#5188B1</color>
+
+</resources>
